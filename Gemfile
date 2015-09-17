@@ -76,3 +76,13 @@ end
 group :production do
   gem 'pg'
 end
+
+gem 'bootstrap-sass'
+gem 'modernizr-rails'
+gem 'meta-tags', require: 'meta_tags'
+gem 'responders', '~> 2.0'
+gem 'bh'
+gem 'devise', '~> 3.4'
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'octokit'

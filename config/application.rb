@@ -22,5 +22,11 @@ module ProjectStats
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-  end
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
+    config.generators do |g|
+      g.stylesheets = false
+      g.scaffold_controller "scaffold_controller"
+    end
+  
+end
 end
